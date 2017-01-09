@@ -30,16 +30,27 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-
+	First of all, it is useful to compare the working directory to the staging area 
+	using `git diff`, to make sure what changes were made to which files. Then, all 
+	files that contain modifications addressing one single logical change can be added 
+	to the staging area, at which point they can be compared to the repository, using 
+	`git diff --staged`. Then, when the correct files are identified with certainty, 
+	the commit can be created, and further files pertaining to a different logical change 
+	can be added to the staging area, and then commited to the repository. This way, we
+	ensure that we create one single commit for each logical change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-
+	Branches would be useful every time we want to test out some new feature that either
+	we are not sure we will end up adding to our production code, or that may take longer
+	to develop and we want to add it to production only when it's finished.
+	Branches would help in such cases, because they would allow us to track changes, and 
+	to be able to show our changes to other people, but without affecting the master branch.
 
 How do the diagrams help you visualize the branch structure?
 
-
+	
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
