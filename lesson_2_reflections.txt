@@ -50,7 +50,9 @@ organized? How would branches help?
 
 How do the diagrams help you visualize the branch structure?
 
-	
+	The diagrams basically offer a visual representation of the branch structure. 
+	Examining a diagram, it is easy to understand what commits are reachable from which
+	branch, and it is also easier to find out when a merge may be required.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
