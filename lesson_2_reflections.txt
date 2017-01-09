@@ -1,0 +1,52 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	When you initialize a repository, all the necessary assets needed to track 
+	files are added to a hidden folder called `.git`. When a repository is 
+	initialized, it is empty and no files are originally tracked, but it is already 
+	possible to check what untracked files are present in the working directory and 
+	could be committed to the repository.
+	When a repository is cloned from another existing repository, it doesn't need
+	to be initialized, because the existing repository gets cloned with all of 
+	its history. However, when we need to create a new repository from scratch, we 
+	need to initialize it, which in fact means creating an empty repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area is different from the working directory, because the files in
+	the working directory do not necessarily need to be tracked. For example, in our
+	working directory we may have files that we want to track and other files that 
+	we don't want to track. However, when we add a file to the staging area, the 
+	assumption is that we intend to track that file, and commit it to our repository.
+	Still, the staging area is different from the repository as well, because the files
+	in the staging area are not yet committed to the repository. In fact, if we notice
+	that we staged files that we actually wanted to commit separately, it is easy to 
+	unstage some of our files, create a commit with the staged files, then add back to the 
+	staging area the files we unstaged before and create a second commit.
+	The usefulness of the staging area is that if we work on different things in our working
+	directory, we can then organize our work into logically meaningful commits that we want 
+	to record in our repository.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+
+
+How do the diagrams help you visualize the branch structure?
+
+
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+	
