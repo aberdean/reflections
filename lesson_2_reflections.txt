@@ -57,7 +57,12 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-
+	The result of merging two branches is that all commits from both branches are included
+	in one single branch. The timestamps determine the order of the commits after the 
+	merging. In the diagram, we represent the tip of the resulting branch having as parents the
+	tips of both the merged branches. This is because when we delete one of the two branches,
+	only the label gets deleted, while the commits remain in the history as part of the
+	resulting branch.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
